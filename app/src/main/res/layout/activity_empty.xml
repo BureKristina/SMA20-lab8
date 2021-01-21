@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.lab8.EmptyActivity">
+
+    <TextView
+        android:id="@+id/tStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Found 5 payments for this month"/>
+
+    <ListView
+        android:id="@+id/listPayments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tStatus"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/blue"/>
+</RelativeLayout>
